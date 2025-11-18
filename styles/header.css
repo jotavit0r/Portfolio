@@ -1,0 +1,51 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cabecalho__logo{
+    width: 65px;
+    height: auto;
+}
+
+.cabecalho__secoes{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    background: radial-gradient(circle, #017a80,#004e52);
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--branco);
+    border-radius: 3rem;
+    align-items: center;
+}
+
+.secao__link{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-weight: 500;
+    color: var(--branco);
+    transition: all 0.3s ease;
+}
+
+.secao__icon{
+    display: none;
+    width: 20px;
+    height: auto;
+}
+
+.secao__link:hover,
+.secao__link.ativo{
+    background: var(--branco);
+    color: var(--preto);
+    padding: 0.4rem 0.8rem;
+    border-radius: 3rem;
+}
+
+.secao__link:hover .secao__icon,
+.secao__link.ativo .secao__icon{
+    display: block;
+}
